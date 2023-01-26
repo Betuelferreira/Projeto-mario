@@ -1,0 +1,27 @@
+@media (max-width: 1200px){
+    body{
+        background-color: rgb(70, 3, 3);
+    }
+
+    .fundo-video{
+        display: none;
+    }
+
+    .container{
+        flex-wrap: wrap;
+       justify-content: center;
+    }
+
+    .container .mario{
+        max-width: 50%;
+        margin-top: 5%;
+        
+    }
+
+    .container .informacoes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+}

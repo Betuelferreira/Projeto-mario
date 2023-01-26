@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho .menu{
+    display: flex;
+    flex-direction: row;  
+    list-style: none;
+    align-items: center;
+    height: 100%;
+}
+
+.menu a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+
+    background-color: brown;
+}
+
+
+
+ 
+ body{
+     font-family: 'Poppins';
+
+ }
+ 
+ .cabecalho{
+
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 65px;
+    right: 65px;
+}
+
+.fundo-video{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh; 
+    /* background-color: #c21e34; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.fundo-video::after{
+    content:"";
+    background-color: #d5011d;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 96%);
+  
+}
+
+
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 112px);
+    padding: 0 30px 30px;
+    
+}
+
+.container .imagem-titulo{
+
+    max-width: 500px;
+}
+
+.container .descricao{
+    color: #a8adb7;
+    width: 85%;
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.container .botao{
+    background-color: #ff0021;
+    color:#ffffff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    transition: 0.5s all ease-out;
+    border-radius: 10px;
+  
+}
+
+
+.container .botao:hover {
+
+    transform: scale(1.1);
+    background-color: #c21e34;
+    
+}
+
+.modal{
+
+    background-color: rgba(52, 52, 50, 0.7);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.cont-modal{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 15px;
+}
+
+.fechar-modal{
+    background-color: #ffffff;
+    color: #f03a17;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+.modal.aberto{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
